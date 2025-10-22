@@ -7,40 +7,41 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#problema">Problema</a>
-      <a href="#solucao">Solução</a>
-      <a href="#rentabilidade">Rentabilidade</a>
-      <a href="#concorrencia">Concorrência</a>
-    </nav>
-  </header>
+  <div class="container">
+    <h1>Mobilidade Urbana para Cidades Pequenas</h1>
 
-  <section id="home">
-    <h1>Home</h1>
-    <p>Transporte moderno para cidades pequenas.</p>
-    <p>Uma solução simples, barata e eficiente para quem precisa se locomover.</p>
-  </section>
+    <div class="box" onclick="toggle('home')">Home</div>
+    <div class="content" id="home">
+      <p>Transporte moderno para cidades pequenas. Solução simples, barata e eficiente para quem precisa se locomover.</p>
+    </div>
 
-  <section id="problema">
-    <h1>Problema</h1>
-    <p>Faltam ônibus. Quem não tem carro sofre. Idosos e estudantes têm dificuldade. O transporte atual é caro e mal aproveitado.</p>
-  </section>
+    <div class="box" onclick="toggle('problema')">Problema</div>
+    <div class="content" id="problema">
+      <p>Faltam ônibus. Quem não tem carro sofre. Idosos e estudantes têm dificuldade. O transporte atual é caro e mal aproveitado.</p>
+    </div>
 
-  <section id="solucao">
-    <h1>Solução</h1>
-    <p>Micro-ônibus sob demanda. Chamado por app ou telefone. Rota inteligente. Parceria com motoristas locais. Bicicletas públicas como apoio.</p>
-  </section>
+    <div class="box" onclick="toggle('solucao')">Solução</div>
+    <div class="content" id="solucao">
+      <p>Micro-ônibus sob demanda. Chamado por app ou telefone. Rota inteligente. Parceria com motoristas locais. Bicicletas públicas como apoio.</p>
+    </div>
 
-  <section id="rentabilidade">
-    <h1>Rentabilidade</h1>
-    <p>Receita por corrida e planos mensais. Apoio da prefeitura. Anúncios nos veículos. Retorno em até 18 meses.</p>
-  </section>
+    <div class="box" onclick="toggle('rentabilidade')">Rentabilidade</div>
+    <div class="content" id="rentabilidade">
+      <p>Receita por corrida e planos mensais. Apoio da prefeitura. Anúncios nos veículos. Retorno em até 18 meses.</p>
+    </div>
 
-  <section id="concorrencia">
-    <h1>Concorrência</h1>
-    <p>Ônibus comuns são caros e ineficientes. Apps como Uber não funcionam bem em cidades pequenas. Nossa solução é local, barata e acessível.</p>
-  </section>
+    <div class="box" onclick="toggle('concorrencia')">Concorrência</div>
+    <div class="content" id="concorrencia">
+      <p>Ônibus comuns são caros e ineficientes. Apps como Uber não funcionam bem em cidades pequenas. Nossa solução é local, barata e acessível.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
+
