@@ -3,12 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto Mobilidade</title>
- 
+  <title>Mobilidade Urbana</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      background: #fff;
+      border: 2px solid #333;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .box:hover {
+      background: #e0e0e0;
+    }
+
+    .content {
+      display: none;
+      background: #fff;
+      border-left: 2px solid #333;
+      border-right: 2px solid #333;
+      border-bottom: 2px solid #333;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Projeto de Mobilidade-Pitanga-PR</h1>
+    <h1>Mobilidade Urbana para Cidades Pequenas</h1>
+
+    <div class="box" onclick="toggle('home')">Home</div>
+    <div class="content" id="home">
+      <p>Transporte moderno para cidades pequenas. Solução simples, barata e eficiente para quem precisa se locomover.</p>
+    </div>
 
     <div class="box" onclick="toggle('problema')">Problema</div>
     <div class="content" id="problema">
@@ -39,4 +86,3 @@
   </script>
 </body>
 </html>
-
