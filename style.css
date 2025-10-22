@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f0f0f0;
-  color: #333;
+  background: #f7f0fa;
+  color: #4b2e5d;
 }
 
 .container {
@@ -14,28 +14,33 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #6a3f8c;
 }
 
 .box {
-  background: #ffffff;
-  border: 2px solid #333;
+  background: #e6d5f7;
+  border: 2px solid #6a3f8c;
   padding: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 8px;
 }
 
 .box:hover {
-  background: #e0e0e0;
+  background: #d4b8f0;
+  transform: scale(1.02);
 }
 
 .content {
   display: none;
-  background: #ffffff;
-  border-left: 2px solid #333;
-  border-right: 2px solid #333;
-  border-bottom: 2px solid #333;
+  background: #f3e9fc;
+  border-left: 2px solid #6a3f8c;
+  border-right: 2px solid #6a3f8c;
+  border-bottom: 2px solid #6a3f8c;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-radius: 0 0 8px 8px;
 }
